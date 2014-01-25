@@ -2,9 +2,10 @@ body {
 	padding-bottom: 20px;
 }
 
-.jumbotron .btn~.btn {
-	margin-left: 5px;
-}
 .center-content {
 	text-align: center;
+}
+
+.jumbotron .btn:first-child {
+	margin-bottom: 10px;
 }
