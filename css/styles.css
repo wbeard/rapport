@@ -1,11 +1,17 @@
-body {
-	padding-bottom: 20px;
-}
-
 .center-content {
 	text-align: center;
 }
 
 .jumbotron .btn:first-child {
 	margin-bottom: 10px;
+}
+
+.navbar {
+	background: rgba(0,0,0,0.8);
+}
+
+footer {
+	margin-top: 10px;
+	background: #666;
+	width: 100%;
 }

@@ -4,7 +4,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href="./bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
 		<link href="http://bootswatch.com/yeti/bootstrap.min.css" rel="stylesheet" />
-		<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" />
+		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" />
 		<link href="./css/styles.css" rel="stylesheet" />
 	</head>
 	<body>
@@ -24,12 +24,12 @@
 			  <!-- Collect the nav links, forms, and other content for toggling -->
 			  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			    <ul class="nav navbar-nav">
-			      <li class="active"><a href="#tenants"><i class="fa fa-fw fa-user"></i>For Renters</a></li>
-			      <li><a href="#lords"><i class="fa fa-home fa-fw"></i>For Landlords</a></li>
-			      <li><a href="#about">About Us</a></li>
+			      <li><a href="#tenants"><i class="fa fa-fw fa-user"></i> For Renters</a></li>
+			      <li><a href="#lords"><i class="fa fa-home fa-fw"></i> For Landlords</a></li>
+			      <li><a href="#about"><i class="fa fa-fw fa-info"></i>About Us</a></li>
 			    </ul>
 			    <ul class="nav navbar-nav navbar-right">
-			      <li><a href="#"><i class="fa fa-fw fa-sign-in"></i>Sign In</a></li>
+			      <li><a data-toggle="modal" data-target="#renterModal" href="#"><i class="fa fa-fw fa-sign-in"></i> Sign In</a></li>
 			  	</ul>
 			  </div><!-- /.navbar-collapse -->
 			</nav>
@@ -49,8 +49,8 @@
 			  		</div>
 			  	</div>
 			</div>
-			<div>
-				<a name="tenants"></a>
+			<a name="tenants"></a>
+			<div id="tenants">
 				<h1 class="center-content">Renters love us. <strong>Period.</strong></h1>
 				<br />
 				<div class="row">
@@ -100,8 +100,8 @@
 				</div>
 			</div>
 			<br />
-			<div>
-				<a name="lords"></a>
+			<a name="lords"></a>
+			<div id="lords">
 				<h1 class="center-content"><strong>Landlords.</strong> No more paper. No more busy work.</h1>
 				<br />
 				<div class="row">
@@ -130,14 +130,14 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="center-content col-md-6 col-sm-6 col-xs-12">
+					<div class="center-content col-lg-6 col-md-6 col-sm-6 col-xs-12">
 						<figure>
 							<i class="fa fa-bell fa-5x text-primary"></i>
 							<h3>One-click notifications to applicants</h3>
 							<p>Easily let applicants know what you decided.</p>
 						</figure>
 					</div>
-					<div class="center-content col-md-6 col-sm-6 col-xs-12">
+					<div class="center-content col-lg-6 col-md-6 col-sm-6 col-xs-12">
 						<figure>
 							<i class="fa fa-usd fa-5x text-primary"></i>
 							<h3>Starts at $10 / month.</h3>
@@ -150,11 +150,31 @@
 					<button data-toggle="modal" data-target="#renterModal" class="btn btn-lg btn-primary">Sign Up</button>
 				</div>
 			</div>
-		</div>
-		<div>
+			<br /><br/>
 			<a name="about"></a>
-
+			<div id="about">
+				<h1 class="center-content">About Us</h1>
+				<br />
+				<div class="row">
+					<div class="center-content col-lg-6 col-md-6 col-sm-6 col-xs-12">
+						<i class="fa fa-user fa-5x"></i>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+						<p>We're honored you're even reading this far. We haven't fully thought out what to put here. Didn't think you'd read it. Uhh... I'd like to thank my Mom and Dad. Thanks guys!</p>
+					</div>
+				</div>
+			</div>
 		</div>
+		<footer>
+			<div class="row">
+				<div class="center-content col-lg-6 col-md-6 col-sm-6 col-xs-12">
+					<h3>Contact</h3>
+				</div>
+				<div class="center-content col-lg-6 col-md-6 col-sm-6 col-xs-12">
+					<h3>Social</h3>
+				</div>
+			</div>
+		</footer>
 		<div class="modal fade" id="renterModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 		  <div class="modal-dialog">
 		    <div class="modal-content">
